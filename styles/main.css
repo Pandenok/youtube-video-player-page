@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 56px;
+  padding: 0 16px;
+  background-color: lightgreen;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+#video-content {
+  width: 50%;
+  padding: 24px 24px 0 0;
+  background-color: lightblue;
+}
+
+#sidebar {
+  width: 25%;
+  padding: 24px 24px 0 0;
+  background-color: yellow;
+}
