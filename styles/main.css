@@ -295,3 +295,144 @@ nav {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+/* Comments */
+
+#comments-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+#counter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+#counter h2{
+  margin-right: 32px;
+}
+
+#counter svg {
+  width: 24px;
+  height: 24px;
+  fill: rgb(144, 144, 144);
+  margin-right: 8px;
+}
+
+#counter span {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-stretch: 100%;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgb(96, 96, 96);
+}
+
+#comment-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+#comment-form img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;;
+}
+
+#comment-form input[type=text] {
+  flex: 1;
+  border: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid;
+  border-color: lightgray;
+  padding: 0 0 4px 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(96, 96, 96);
+  background-color: transparent;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.author-avatar img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.comment-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-header {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.comment-header h1 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 4px;
+}
+
+.comment-header span {
+  color: rgb(96, 96, 96);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.comment-body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-left: -8px;
+}
+
+.comment-actions button {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  padding: 0;
+  background: transparent;
+  color: #606077;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-actions button svg {
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  fill: #909090;
+}
+
+.comment-actions button span {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgb(96, 96, 96);
+}
