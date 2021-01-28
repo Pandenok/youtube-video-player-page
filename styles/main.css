@@ -21,13 +21,13 @@ main {
 #video-content {
   width: 60%;
   padding: 24px 24px 0 0;
-  background-color: lightblue;
+/*   background-color: lightblue; */
 }
 
 #sidebar {
   width: 20%;
   padding: 24px 24px 0 0;
-  background-color: yellow;
+/*   background-color: yellow; */
 }
 
 /*
@@ -435,4 +435,73 @@ nav {
   line-height: 18px;
   text-transform: uppercase;
   color: rgb(96, 96, 96);
+}
+
+/*
+  ========================================
+  Video Preview Sidebar
+  ========================================
+*/
+
+.preview-container {
+  margin-top: 8px;
+}
+
+.preview-container:first-child {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.preview-container a {
+  display: flex;
+  text-decoration: none;
+}
+
+.video-thumbnail {
+  width: 168px;
+  margin-right: 8px;
+}
+
+.preview-metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.video-title {
+  margin-bottom: 4px;
+  color: rgb(3, 3, 3);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: normal;
+}
+
+.secondary-metadata {
+  color: rgb(96, 96, 96);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+#preview-filter button {
+  padding: 5px 12px;
+  margin: 4px 8px 4px 0;
+  background-color: rgb(96, 96, 96);
+  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  border: 1px solid rgb(96, 96, 96);
+  cursor: pointer;
+}
+
+#preview-filter button:last-child {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgb(3, 3, 3);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
