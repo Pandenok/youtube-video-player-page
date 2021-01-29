@@ -464,20 +464,59 @@ nav {
   margin-right: 8px;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.preview-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlay svg {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  padding: 6px;
+  fill: white;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.overlay svg:last-child {
+  top: 34px;
+  right: 4px;
+}
+
+.preview-container:hover .overlay {
+  opacity: 1;
+}
+
 .video-length {
   position: absolute;
   bottom: 4px;
   right: 4px;
   color: white;
   padding: 4px;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: black;
   font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
+  opacity: 0.9;
 }
 
 .preview-metadata {
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
