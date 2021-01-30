@@ -8,11 +8,17 @@ html, body {
 }
 
 header {
+  width: 100%;
   height: 56px;
   padding: 0 16px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 main {
+  margin-top: 56px;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -125,6 +131,7 @@ nav {
 #nav-end {
   display: flex;
   align-items: center;
+  margin-right: 32px;
 }
 
 #nav-end button {
